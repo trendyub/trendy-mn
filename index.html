@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRENDY.MN — Streetwear</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><a class="logo" href="#">TRENDY<span>.MN</span></a><nav><a href="#new">NEW</a><a href="#men">MEN</a><a href="#women">WOMEN</a><a href="#sale">SALE</a></nav><button class="cart" onclick="openCart()">CART (<span id="count">0</span>)</button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">TRENDY.MN / STREETWEAR</p><h1>WEAR<br><span>YOUR</span><br>VIBE.</h1><p class="sub">Everyday streetwear. Made for your style.</p><div><a class="btn light" href="#new">SHOP NOW</a></div></div></section>
+<section class="intro"><p>NEW SEASON</p><h2>FRESH DROPS.<br>EVERY WEEK.</h2></section>
+<section id="new" class="products"><div class="section-head"><h2>NEW ARRIVALS</h2><a href="#">VIEW ALL →</a></div><div class="grid" id="productGrid"></div></section>
+<section class="split"><div class="split-image"></div><div class="split-copy"><p>TRND / 001</p><h2>STREET<br>ESSENTIALS</h2><p>Minimal silhouettes. Oversized fits. Everyday comfort.</p><a class="btn dark" href="#men">SHOP COLLECTION</a></div></section>
+<section class="newsletter"><p>STAY IN THE LOOP</p><h2>GET THE DROP FIRST.</h2><form onsubmit="subscribe(event)"><input type="email" placeholder="Your email address" required><button>SUBSCRIBE</button></form></section>
+</main>
+<footer><div class="logo">TRENDY<span>.MN</span></div><p>© 2026 TRENDY.MN</p><div><a href="#">Instagram</a><a href="#">Facebook</a></div></footer>
+<div class="overlay" id="overlay" onclick="closeCart(event)"><aside class="drawer" onclick="event.stopPropagation()"><button class="close" onclick="closeCart()">×</button><h2>YOUR CART</h2><div id="cartItems"></div><div class="total">TOTAL <strong id="total">₮0</strong></div><button class="checkout" onclick="checkout()">CHECKOUT</button></aside></div>
+<script src="script.js"></script>
+</body></html>
